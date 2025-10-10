@@ -1,0 +1,186 @@
+.header {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(167, 104, 104);
+    color: white;
+}
+.header p {
+    font-style: italic;
+}
+
+.nav ul {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    height: 60px;
+    align-items: center;
+    font-size: 18px;
+    border-style: dotted;
+}
+
+.nav li {
+    flex: 1;
+    text-align: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+.nav a:hover {
+    background-color: rgba(219, 154, 154, 0.5);
+}
+
+.content {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+    align-items: stretch;
+}
+
+.product-list {
+    display: flex;
+    flex: 3;
+    gap: 1rem;
+    background-color: white;
+    justify-content: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    border-style: dotted;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.special-offer {
+    background-color: white;
+    padding: 1rem;
+    border-style: dotted;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(167, 104, 104);
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.category-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .product-list {
+        flex-wrap: wrap;
+    }
+    
+    .product-card {
+        flex: 1 1 calc(50% - 1rem);
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    
+    .nav ul {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .nav li {
+        width: 100%;
+    }
+    
+    .product-list {
+        flex-direction: column;
+    }
+    
+    footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .footer-column {
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .header p {
+        font-size: 0.9rem;
+    }
+    
+    .nav ul {
+        font-size: 16px;
+    }
+    
+    .product-card {
+        min-width: 100%;
+    }
+    
+    .special-offer h3 {
+        font-size: 1.1rem;
+    }
+}
+
+h1 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+h2 {
+    font-size: clamp(1.3rem, 3vw, 2rem);
+}
+
+h3 {
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
