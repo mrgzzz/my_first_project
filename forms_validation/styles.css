@@ -4,7 +4,7 @@ body {
 
 .container {
     max-width: 550px;
-    margin: 0 auto;
+    margin: 0 auto; 
     background: white;
     padding: 30px;
     border-radius: 15px;
@@ -123,4 +123,5 @@ textarea:valid {
     .container {
         padding: 20px;
     }
+
 }
