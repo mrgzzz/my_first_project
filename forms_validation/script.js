@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const fields = {
         name: document.getElementById('name'),
         phone: document.getElementById('phone'),
-        email: document.getElementById('email'),
+        email: document.getElementById('email'), 
         productType: document.getElementById('productType'),
         agreement: document.getElementById('agreement')
     };
@@ -141,4 +141,5 @@ document.addEventListener('DOMContentLoaded', function() {
             hideError(key);
         });
     }
+
 });
