@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ателье - Форма заказа</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Форма заказа ателье ^^</h1>
+        <form id="orderForm" novalidate>
+            <div class="form-group">
+                <label for="name">ФИО *</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error-message" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Телефон *</label>
+                <input type="tel" id="phone" name="phone" pattern="[\+]\d{1}\s?[\(]\d{3}[\)]\s?\d{3}[\-]\d{2}[\-]\d{2}" placeholder="+7(999)999-99-99" required>
+                <span class="error-message" id="phoneError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="emailError"></span>
+            </div>
+
+            <fieldset>
+                <legend>Тип изделия</legend>
+                <div class="form-group">
+                    <select id="productType" name="productType" required>
+                        <option value="">Выберите тип изделия</option>
+                        <option value="dress">Платье</option>
+                        <option value="suit">Костюм</option>
+                        <option value="shirt">Рубашка</option>
+                        <option value="trousers">Брюки</option>
+                        <option value="other">Другое</option>
+                    </select>
+                    <span class="error-message" id="productTypeError"></span>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Срок выполнения</legend>
+                <div class="form-group">
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="deadline" value="7" required>
+                            7 дней
+                        </label>
+                        <label>
+                            <input type="radio" name="deadline" value="14">
+                            14 дней
+                        </label>
+                        <label>
+                            <input type="radio" name="deadline" value="30">
+                            30 дней
+                        </label>
+                    </div>
+                    <span class="error-message" id="deadlineError"></span>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="measurements">Мерки (см)</label>
+                <textarea id="measurements" name="measurements" rows="4" placeholder="Укажите ваши мерки..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Комментарии к заказу</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Дополнительные пожелания..."></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <label>
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    Я согласен на обработку персональных данных *
+                </label>
+                <span class="error-message" id="agreementError"></span>
+            </div>
+
+            <button type="submit">Отправить заказ</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
