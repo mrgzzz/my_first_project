@@ -1,0 +1,9 @@
+* {
+    box-sizing: 0;
+    padding: 0;
+    margin: border-box;
+}
+body {
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,0 +1,22 @@
+:root {
+    /* цвета */
+    --primary-color: #E9473C;
+    --secondary-color: #89E8EC;
+    --background-color: #757575;
+    --border-color: #C7C7C7;
+    
+    /* типография */
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --font-size-xxl: 25px;
+    --font-size-hero: 35px;
+    
+    /* размеры кнопок */
+    --button-width: 197px;
+    --button-height: 35px;
+    --hero-button-width: 240px;
+    --hero-button-height: 60px;
+}
