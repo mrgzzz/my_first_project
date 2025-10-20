@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <h1>DOM Manipulation Practice</h1>
+    </header>
+
+    <main>
+        <section id="target1" class="container">
+            <h2>Задачи 1.1 и 1.2</h2>
+            <button onclick="createCard('Тестовая карточка', 'Это содержимое карточки')">Создать карточку</button>
+            <button onclick="createList(['Первый', 'Второй', 'Третий'])">Создать список</button>
+        </section>
+
+        <section id="parent-element" class="container">
+            <h2>Задача 2</h2>
+            <div class="child">Обычный элемент</div>
+            <div class="child special">Специальный элемент</div>
+            <div class="child">Еще один элемент</div>
+            <button onclick="alert('Дочерних элементов: ' + countChildren())">Посчитать детей</button>
+            <button onclick="alert('Текст специального элемента: ' + findSpecialChild())">Найти специальный</button>
+            <button onclick="alert('Цвет фона родителя: ' + getParentBackground())">Цвет фона родителя</button>
+        </section>
+
+        <section class="container">
+            <h2>Задача 3</h2>
+            <div id="style-target" class="style-box">Элемент для стилей</div>
+            <button id="toggle-style" onclick="toggleStyle()">Переключить стиль</button>
+            <button onclick="changeHeaderColor()">Изменить цвет header</button>
+            <button onclick="animateElement()">Анимировать элемент</button>
+        </section>
+
+        <section class="container">
+            <h2>Задача 4</h2>
+            <button id="click-btn">Кликни меня</button>
+            <span id="click-counter">0</span> кликов
+            
+            <input type="text" id="text-input" placeholder="Введите текст">
+            <div id="input-display"></div>
+        </section>
+
+        <section class="container">
+            <h2>Задача 5</h2>
+            <input type="text" id="item-input" placeholder="Новый элемент">
+            <button onclick="addListItem()">Добавить в список</button>
+            <button onclick="clearList()">Очистить список</button>
+            <ul id="dynamic-list"></ul>
+        </section>
+    </main>
+
+    <script src="dom-tasks.js"></script>
+</body>
+</html>
