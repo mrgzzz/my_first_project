@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обработка событий</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Обработка событий JavaScript</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>Задание 1: Базовые обработчики</h2>
+            <button id="basic-btn">Кликни меня</button>
+            <div id="basic-output" class="output"></div>
+            
+            <div id="color-box" class="color-box">Наведи курсор</div>
+            <div id="mouse-output" class="output"></div>
+        </section>
+
+        <section class="container">
+            <h2>Задание 2: События клавиатуры</h2>
+            <input type="text" id="key-input" placeholder="Введите текст">
+            <div id="key-output" class="output"></div>
+        </section>
+
+        <section class="container">
+            <h2>Задание 3: Делегирование событий</h2>
+            <button id="add-item-btn">Добавить элемент</button>
+            <ul id="item-list">
+                <li class="item" data-id="1">Элемент 1 <button class="delete">×</button></li>
+                <li class="item" data-id="2">Элемент 2 <button class="delete">×</button></li>
+            </ul>
+            <div id="delegation-output" class="output"></div>
+        </section>
+
+        <section class="container">
+            <h2>Задание 4: Предотвращение поведения</h2>
+            <a href="https://google.com" id="prevent-link">Ссылка на Google</a>
+            <form id="prevent-form">
+                <input type="text" placeholder="Введите текст">
+                <button type="submit">Отправить</button>
+            </form>
+            <div id="prevention-output" class="output"></div>
+        </section>
+
+        <section class="container">
+            <h2>Задание 5: Кастомные события</h2>
+            <button id="trigger-custom">Запустить кастомное событие</button>
+            <div id="custom-output" class="output"></div>
+        </section>
+    </main>
+
+    <script src="events-tasks.js"></script>
+</body>
+</html>
