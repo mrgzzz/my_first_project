@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fetch API Practice</h1>
+        
+        <section class="section">
+            <h2>GET запросы</h2>
+            <button id="fetch-get">Простой GET</button>
+            <button id="fetch-json">JSON данные</button>
+            <button id="fetch-error">Ошибка</button>
+            <div id="get-output" class="output"></div>
+            <div id="get-data" class="output"></div>
+        </section>
+
+        <section class="section">
+            <h2>CRUD операции</h2>
+            <button id="fetch-post">POST</button>
+            <button id="fetch-put">PUT</button>
+            <button id="fetch-patch">PATCH</button>
+            <button id="fetch-delete">DELETE</button>
+            <div id="crud-output" class="output"></div>
+        </section>
+
+        <section class="section">
+            <h2>Заголовки и параметры</h2>
+            <button id="fetch-headers">Заголовки</button>
+            <button id="fetch-auth">Авторизация</button>
+            <button id="fetch-params">Параметры</button>
+            <button id="fetch-timeout">Таймаут</button>
+            <div id="headers-output" class="output"></div>
+        </section>
+
+        <section class="section">
+            <h2>Обработка ответов</h2>
+            <button id="fetch-status">Статус</button>
+            <button id="fetch-read-headers">Заголовки ответа</button>
+            <!-- Убраны кнопки для нереализованных функций -->
+            <div id="response-output" class="output"></div>
+        </section>
+    </div>
+
+    <script src="fetch-tasks.js"></script>
+</body>
+</html>
