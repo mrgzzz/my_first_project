@@ -1,0 +1,192 @@
+/* Стили для StatefulComponents */
+
+.counter {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.counter-buttons button {
+  min-width: 60px;
+}
+
+/* Стили для формы входа */
+.login-form {
+  max-width: 400px;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group input.error {
+  border-color: #dc3545;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.8em;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Стили для выбора цвета */
+.color-picker {
+  margin: 20px 0;
+}
+
+.color-preview {
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.color-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.color-option {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.color-option.selected {
+  border-color: #333;
+  transform: scale(1.1);
+}
+
+.color-option:hover {
+  transform: scale(1.05);
+}
+
+/* Стили для списка задач */
+.todo-list {
+  margin: 20px 0;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.todo-item.completed {
+  background-color: #f8f9fa;
+  opacity: 0.7;
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.todo-text {
+  flex: 1;
+}
+
+/* Стили для поиска */
+.search-box {
+  margin: 20px 0;
+}
+
+.search-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.search-input input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-results {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  background: #f8f9fa;
+}
+
+.search-results h4 {
+  margin-top: 0;
+}
+
+.search-results ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search-results li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.search-results li:last-child {
+  border-bottom: none;
+}
+
+.no-results {
+  color: #6c757d;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}

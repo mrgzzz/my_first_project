@@ -1,0 +1,184 @@
+/* Стили для HooksComponents */
+
+.counter-hooks {
+  padding: 20px;
+  border: 2px solid #17a2b8;
+  border-radius: 10px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Стили для профиля пользователя */
+.user-profile {
+  padding: 20px;
+  border: 2px solid #20c997;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.profile-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.field label {
+  font-weight: 500;
+  min-width: 80px;
+}
+
+.field input,
+.field textarea {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.field span {
+  flex: 1;
+  padding: 8px 0;
+}
+
+/* Стили для демонстрации useEffect */
+.effect-demo {
+  padding: 20px;
+  border: 2px solid #e83e8c;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.demo-section {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.demo-section:last-child {
+  border-bottom: none;
+}
+
+.demo-section input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.console-info {
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #6c757d;
+  text-align: center;
+}
+
+/* Стили для темы */
+.app.light {
+  background-color: white;
+  color: #333;
+}
+
+.app.dark {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.theme-toggle {
+  padding: 20px;
+  border: 2px solid #6f42c1;
+  border-radius: 10px;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.app.light .theme-toggle {
+  background: white;
+}
+
+.app.dark .theme-toggle {
+  background: #2d3748;
+}
+
+.theme-controls {
+  margin-bottom: 20px;
+}
+
+.font-size-controls {
+  margin-top: 15px;
+}
+
+.size-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.theme-preview {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.preview-content.small {
+  font-size: 0.8em;
+}
+
+.preview-content.medium {
+  font-size: 1em;
+}
+
+.preview-content.large {
+  font-size: 1.2em;
+}
+
+.app.dark .theme-preview {
+  border-color: #4a5568;
+  background: #4a5568;
+}
+
+/* Стили для демонстрации useFetch */
+.fetch-demo {
+  padding: 20px;
+  border: 2px solid #fd7e14;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.post-controls {
+  margin-bottom: 15px;
+}
+
+.post-controls input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 10px;
+  width: 80px;
+}
+
+.post {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.app.dark .post {
+  background: #4a5568;
+}

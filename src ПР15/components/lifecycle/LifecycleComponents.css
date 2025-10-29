@@ -1,0 +1,107 @@
+/* Стили для LifecycleComponents */
+
+.timer {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #28a745;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.timer-display {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #28a745;
+  margin: 20px 0;
+  font-family: 'Courier New', monospace;
+}
+
+.timer-controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.timer-controls button {
+  min-width: 80px;
+}
+
+/* Стили для трекера размера окна */
+.window-size-tracker {
+  padding: 20px;
+  border: 2px solid #ffc107;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.size-info {
+  background: #fff3cd;
+  padding: 15px;
+  border-radius: 6px;
+  margin: 15px 0;
+}
+
+.size-visualization {
+  background: linear-gradient(45deg, #ffc107, #fd7e14);
+  border: 2px dashed #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  margin: 10px auto;
+  max-width: 200px;
+}
+
+/* Стили для загрузки данных */
+.data-fetcher {
+  padding: 20px;
+  border: 2px solid #6f42c1;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.user-id-control {
+  margin-bottom: 15px;
+}
+
+.user-id-control input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 10px;
+  width: 60px;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #6f42c1;
+  font-style: italic;
+}
+
+.error {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.user-data {
+  background: #e9ecef;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.user-data h4 {
+  margin-top: 0;
+  color: #495057;
+}
+
+.user-data p {
+  margin: 5px 0;
+}
