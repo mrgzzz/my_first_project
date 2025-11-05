@@ -1,0 +1,13 @@
+{
+  "name": "nodejs-server-pr19",
+  "version": "1.0.0",
+  "description": "Практическая работа по созданию сервера на Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "advanced": "node advanced-server.js"
+  },
+  "keywords": ["nodejs", "server", "http"],
+  "author": "",
+  "license": "ISC"
+}
