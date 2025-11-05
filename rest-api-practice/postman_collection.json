@@ -1,0 +1,70 @@
+{
+  "info": {
+    "name": "REST API PR21",
+    "description": "Коллекция запросов для тестирования REST API книг",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Получить все книги",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api/books"
+      }
+    },
+    {
+      "name": "Получить книгу по ID",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api/books/1"
+      }
+    },
+    {
+      "name": "Фильтрация по автору",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api/books?author=Толстой"
+      }
+    },
+    {
+      "name": "Создать книгу",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:3000/api/books",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\": \"Анна Каренина\", \"author\": \"Лев Толстой\", \"year\": 1877, \"genre\": \"роман\", \"isbn\": \"1234567892\"}"
+        }
+      }
+    },
+    {
+      "name": "Полное обновление книги",
+      "request": {
+        "method": "PUT",
+        "url": "http://localhost:3000/api/books/1",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\": \"Война и мир (обновлено)\", \"author\": \"Лев Толстой\", \"year\": 1869, \"genre\": \"роман-эпопея\", \"isbn\": \"1234567890\"}"
+        }
+      }
+    },
+    {
+      "name": "Частичное обновление книги",
+      "request": {
+        "method": "PATCH",
+        "url": "http://localhost:3000/api/books/1",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"year\": 1870}"
+        }
+      }
+    },
+    {
+      "name": "Удалить книгу",
+      "request": {
+        "method": "DELETE",
+        "url": "http://localhost:3000/api/books/1"
+      }
+    }
+  ]
+}
