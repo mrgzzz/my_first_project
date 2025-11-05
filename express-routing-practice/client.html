@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Тестовый клиент</title>
+</head>
+<body>
+    <h1>Тестирование API</h1>
+    
+    <button onclick="getData()">GET данные</button>
+    <button onclick="postData()">POST данные</button>
+    
+    <div id="result"></div>
+
+    <script>
+        async function getData() {
+            try {
+                const response = await fetch('http://localhost:3000/api/data');
+                const data = await response.json();
+                document.getElementById('result').textContent = JSON.stringify(data);
+            } catch (error) {
+                console.error('Ошибка:', error);
+            }
+        }
+
+        async function postData() {
+            try {
+                const response = await fetch('http://localhost:3000/api/data', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ test: 'data' })
+                });
+                const data = await response.json();
+                document.getElementById('result').textContent = JSON.stringify(data);
+            } catch (error) {
+                console.error('Ошибка:', error);
+            }
+        }
+    </script>
+</body>
+</html>

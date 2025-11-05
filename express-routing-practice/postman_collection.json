@@ -1,0 +1,66 @@
+{
+  "info": {
+    "name": "Express Routing PR20",
+    "description": "Коллекция запросов для тестирования Express приложения",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Главная страница",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/"
+      }
+    },
+    {
+      "name": "Получить всех пользователей",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/users"
+      }
+    },
+    {
+      "name": "Получить пользователя по ID",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/users/1"
+      }
+    },
+    {
+      "name": "Создать пользователя",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:3000/users",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\": \"Алексей\", \"email\": \"alex@mail.com\"}"
+        }
+      }
+    },
+    {
+      "name": "Получить все товары",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/products"
+      }
+    },
+    {
+      "name": "Получить товар по ID",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/products/1"
+      }
+    },
+    {
+      "name": "Создать товар",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:3000/products",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\": \"Планшет\", \"price\": 1500}"
+        }
+      }
+    }
+  ]
+}
