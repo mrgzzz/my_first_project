@@ -1,7 +1,8 @@
 # Задание 1. Анализ legacy PHP-кода
+
 **Анализ:**
 
-1. Переменная $id = $_GET['id'] напрямую вставляется в SQL-запрос без какой-либо проверки, поэтому можно выполнить произвольный SQL-код.
+1. Переменная `$id = $_GET['id']` напрямую вставляется в SQL-запрос без какой-либо проверки, поэтому можно выполнить произвольный SQL-код.
 
 2. PHP-код работы с базой данных перемешан с HTML-разметкой. Логика выборки данных и их отображения находится в одном месте.
 
@@ -9,17 +10,18 @@
 
 4. Небезопасный вывод данных.
 
-# Инструкция по установке и запуску Laravel:**
+# Инструкция по установке и запуску Laravel
 
 **Требования**
--PHP 8.0 или выше
--Composer
--MySQL/PostgreSQL/SQLite
--Расширения PHP: BCMath, Ctype, cURL, DOM, Fileinfo, JSON, Mbstring, OpenSSL, PCRE, PDO, Tokenizer, XML
+- PHP 8.0 или выше
+- Composer
+- MySQL/PostgreSQL/SQLite
+- Расширения PHP: BCMath, Ctype, cURL, DOM, Fileinfo, JSON, Mbstring, OpenSSL, PCRE, PDO, Tokenizer, XML
 
 **Установка**
+
 1. Создание нового проекта Laravel
-```composer create-project laravel/laravel my-project
+composer create-project laravel/laravel my-project
 cd my-project
 
 2. Настройка окружения
