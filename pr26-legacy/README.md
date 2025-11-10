@@ -21,23 +21,24 @@
 **Установка**
 
 1. Создание нового проекта Laravel
-composer create-project laravel/laravel my-project
-cd my-project
+`composer create-project laravel/laravel my-project
+cd my-project`
 
 2. Настройка окружения
-cp .env.example .env
-php artisan key:generate
+`cp .env.example .env
+php artisan key:generate`
 
 3. Настройка базы данных
 Для файла .env:
-DB_CONNECTION=mysql
+`DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=laravel
 DB_USERNAME=root
-DB_PASSWORD=
+DB_PASSWORD=`
 
 4. Запуск сервера
-php artisan server
+`php artisan server`
 
 Приложение будет доступно по адресу: http://localhost:8000
+
